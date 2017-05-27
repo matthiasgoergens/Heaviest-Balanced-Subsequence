@@ -19,6 +19,8 @@ library
   default-extensions:  DeriveFunctor, DeriveGeneric, DeriveFoldable, DeriveTraversable, ViewPatterns, ScopedTypeVariables, PartialTypeSignatures, TupleSections, TypeSynonymInstances, FlexibleInstances, MultiParamTypeClasses
   build-depends:       base >= 4.7 && < 5
                      , heaps
+                     , bifunctors >= 5.4
+                     , containers >= 0.5.7
   default-language:    Haskell2010
 
 executable heaviest-balanced-subsequence-exe
