@@ -15,7 +15,7 @@ cabal-version:       >=1.10
 
 library
   hs-source-dirs:      src
-  exposed-modules:     Lib
+  exposed-modules:     Lib, Linear
   default-extensions:  DeriveFunctor, DeriveGeneric, DeriveFoldable, DeriveTraversable, ViewPatterns, ScopedTypeVariables, PartialTypeSignatures, TupleSections, TypeSynonymInstances, FlexibleInstances, MultiParamTypeClasses
   build-depends:       base >= 4.7 && < 5
                      , heaps
