@@ -48,7 +48,7 @@ maximize: v0 * price0 + v1 * price1 + ...
 > checkDual :: (Ord v, Ord c) => Input v c -> Solution v c -> Bool
 > checkDual i s = checkAscending s && checkCutOff i s
 
-> checkAscending ::  Ord c => Solution _ c -> Bool
+> checkAscending ::  Ord c => Solution v c -> Bool
 > checkAscending s = ascending . map snd $ s where
 >   ascending l = l == sort l
 
